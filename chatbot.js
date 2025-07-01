@@ -170,7 +170,7 @@
         }
 
         .n8n-chat-widget .chat-message.bot {
-            background: var(--chat--color-background);
+            background: #424242;
             border: 1px solid linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
             color: var(--chat--color-font);
             align-self: flex-start;
