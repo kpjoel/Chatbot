@@ -21,7 +21,7 @@
             background: var(--chat--color-background);
             border-radius: 12px;
             box-shadow: 0 8px 32px rgba(133, 79, 255, 0.15);
-            border: 1px solid rgba(133, 79, 255, 0.2);
+            border: 1px solid linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
             overflow: hidden;
             font-family: inherit;
         }
@@ -41,7 +41,7 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            border-bottom: 1px solid rgba(133, 79, 255, 0.1);
+            border-bottom: 1px solid linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
             position: relative;
         }
 
@@ -107,7 +107,7 @@
             background: linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
             color: white;
             border: none;
-            border-radius: 8px;
+            border-radius: 25px;
             cursor: pointer;
             font-size: 16px;
             transition: transform 0.3s;
@@ -165,13 +165,13 @@
             background: linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
             color: white;
             align-self: flex-end;
-            box-shadow: 0 4px 12px rgba(133, 79, 255, 0.2);
+            box-shadow: 0 4px 12px linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
             border: none;
         }
 
         .n8n-chat-widget .chat-message.bot {
             background: var(--chat--color-background);
-            border: 1px solid rgba(133, 79, 255, 0.2);
+            border: 1px solid linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
             color: var(--chat--color-font);
             align-self: flex-start;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -180,7 +180,7 @@
         .n8n-chat-widget .chat-input {
             padding: 16px;
             background: var(--chat--color-background);
-            border-top: 1px solid rgba(133, 79, 255, 0.1);
+            border-top: 1px solid linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
             display: flex;
             gap: 8px;
         }
@@ -188,7 +188,7 @@
         .n8n-chat-widget .chat-input textarea {
             flex: 1;
             padding: 12px;
-            border: 1px solid rgba(133, 79, 255, 0.2);
+            border: 1px solid linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
             border-radius: 8px;
             background: var(--chat--color-background);
             color: var(--chat--color-font);
@@ -206,7 +206,7 @@
             background: linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
             color: white;
             border: none;
-            border-radius: 8px;
+            border-radius: 25px;
             padding: 0 20px;
             cursor: pointer;
             transition: transform 0.2s;
@@ -256,7 +256,7 @@
             padding: 8px;
             text-align: center;
             background: var(--chat--color-background);
-            border-top: 1px solid rgba(133, 79, 255, 0.1);
+            border-top: 1px solid linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
         }
 
         .n8n-chat-widget .chat-footer a {
