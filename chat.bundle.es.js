@@ -7,10 +7,6 @@
             --chat--color-secondary: var(--n8n-chat-secondary-color, #6b3fd4);
             --chat--color-background: var(--n8n-chat-background-color, #ffffff);
             --chat--color-font: var(--n8n-chat-font-color, #333333);
-            --chat--color-botfont: var(--n8n-chat-bot-font-color, #FAFAFA);
-            --chat--color-botbackground: var(--n8n-chat-bot-background-color, #343434);
-
-
             font-family: 'Geist Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
@@ -54,7 +50,7 @@
             right: 16px;
             top: 50%;
             transform: translateY(-50%);
-            : none;
+            background: none;
             border: none;
             color: var(--chat--color-font);
             cursor: pointer;
@@ -108,7 +104,7 @@
             gap: 8px;
             width: 100%;
             padding: 16px 24px;
-            : linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
+            background: linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
             color: white;
             border: none;
             border-radius: 25px;
@@ -150,7 +146,7 @@
             flex: 1;
             overflow-y: auto;
             padding: 20px;
-            : var(--chat--color-);
+            background: var(--chat--color-background);
             display: flex;
             flex-direction: column;
         }
@@ -174,9 +170,9 @@
         }
 
         .n8n-chat-widget .chat-message.bot {
-            background: var(--chat--color-botbackground);
+            background: var(--chat--color-background);
             border: 1px solid linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
-            color: var(--chat--color-botfont);
+            color: var(--chat--color-font);
             align-self: flex-start;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
@@ -336,10 +332,6 @@
     widgetContainer.style.setProperty('--n8n-chat-secondary-color', config.style.secondaryColor);
     widgetContainer.style.setProperty('--n8n-chat-background-color', config.style.backgroundColor);
     widgetContainer.style.setProperty('--n8n-chat-font-color', config.style.fontColor);
-    widgetContainer.style.setProperty('--n8n-chat-botfont-color', config.style.botfontColor);
-    widgetContainer.style.setProperty('--n8n-chat-botbackground-color', config.style.botbackgroundColor);
-
-
 
     const chatContainer = document.createElement('div');
     chatContainer.className = `chat-container${config.style.position === 'left' ? ' position-left' : ''}`;
