@@ -18,7 +18,7 @@
             display: none;
             width: 380px;
             height: 600px;
-            background: var(--chat--color-background);
+            background: white;
             border-radius: 12px;
             box-shadow: 0 8px 32px rgba(133, 79, 255, 0.15);
             border: 1px solid linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
